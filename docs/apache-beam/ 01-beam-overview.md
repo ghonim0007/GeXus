@@ -76,4 +76,4 @@ An illustration of the Apache Beam pipeline structure and data flow model is pro
 
 ---
 
-**Document maintained as part of the GeoNexus open-source initiative.**
+**Document maintained as part of the GeXus open-source initiative.**
