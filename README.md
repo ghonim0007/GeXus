@@ -1,9 +1,6 @@
-### README.md
-
 # GeXus
 
-[](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/YourUsername/GeXus)
-
+[![GeXus Logo](IMG/LOGO1.png)](https://github.com/ghonim0007/GeoNexus)
 **GeXus** is an open-source framework designed to tackle the challenges of big geospatial data. The aim is to bridge the gap between traditional GIS data formats and modern big data processing pipelines.
 
 ## The Vision
