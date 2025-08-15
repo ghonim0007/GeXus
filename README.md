@@ -1,5 +1,3 @@
-### README.md
-
 # GeXus
 
 [](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/YourUsername/GeXus)

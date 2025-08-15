@@ -1,6 +1,6 @@
 # Apache Beam Core Concepts
 
-This document provides a technical overview of the core concepts in Apache Beam. These concepts form the foundational architecture that will guide data processing within the GeoNexus framework.
+This document provides a technical overview of the core concepts in Apache Beam. These concepts form the foundational architecture that will guide data processing within the GeXus framework.
 
 ## 1. Overview of Apache Beam and the Runner Concept
 
@@ -64,9 +64,9 @@ These windowing strategies enable developers to define meaningful aggregations a
 
 Beam pipelines are executed lazily by the selected runner. Each runner may implement its own optimizations and parallelization techniques. Beam abstracts away the execution logic so that the same pipeline can run on different runners with minimal code changes.
 
-## 5. Integration with GeoNexus
+## 5. Integration with GeXus
 
-In the context of the GeoNexus project, Apache Beam will serve as the core processing engine for geospatial data pipelines. It will enable scalable ingestion, transformation, and analysis of various geospatial formats such as FlatGeobuf, GeoTIFF, and others. The combination of Beam's flexibility and GeoNexus's spatial data capabilities will allow developers to build high-performance, distributed geospatial applications.
+In the context of the GeXus project, Apache Beam will serve as the core processing engine for geospatial data pipelines. It will enable scalable ingestion, transformation, and analysis of various geospatial formats such as FlatGeobuf, GeoTIFF, and others. The combination of Beam's flexibility and GeXus's spatial data capabilities will allow developers to build high-performance, distributed geospatial applications.
 
 ## Diagram
 
@@ -76,4 +76,4 @@ An illustration of the Apache Beam pipeline structure and data flow model is pro
 
 ---
 
-**Document maintained as part of the GeoNexus open-source initiative.**
+**Document maintained as part of the GeXus open-source initiative.**
