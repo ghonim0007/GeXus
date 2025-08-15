@@ -7,6 +7,5 @@ __author__ = "ghonim0007"
 __email__ = "ghonem717@gmail.com"
 
 from .core import GeoProcessor
-from .formats import FlatGeobufReader
 
-__all__ = ["GeoProcessor", "FlatGeobufReader"]
+__all__ = ["GeoProcessor"]

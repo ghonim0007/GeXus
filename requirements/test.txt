@@ -1,0 +1,2 @@
+-r base.txt
+pytest-xdist>=3.0

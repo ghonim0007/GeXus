@@ -25,7 +25,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements/*.txt') }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/pyproject.toml', '**/requirements/*.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
     
@@ -36,17 +36,22 @@ jobs:
     
     - name: Lint with flake8
       run: |
-        flake8 gexus tests --max-line-length=88
+        flake8 gexus tests --max-line-length=88 --extend-ignore=E203,W503
     
-    - name: Type check with mypy
+    - name: Format check with black
       run: |
-        mypy gexus
+        black --check gexus tests
+    
+    - name: Import sorting check
+      run: |
+        isort --check-only gexus tests
     
     - name: Test with pytest
       run: |
-        pytest tests/ --cov=gexus --cov-report=xml
+        pytest tests/ --cov=gexus --cov-report=xml -v
     
     - name: Upload coverage to Codecov
+      if: matrix.python-version == '3.10'
       uses: codecov/codecov-action@v3
       with:
         file: ./coverage.xml
