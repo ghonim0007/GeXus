@@ -1,2 +1,5 @@
 apache-beam[gcp]>=2.50.0
 click>=8.0.0
+flatgeobuf>=2.0.0
+pyproj>=3.4.0
+shapely>=1.8.0
